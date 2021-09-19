@@ -26,7 +26,7 @@ body {
   background-size: cover;
   background-position: top;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 50% 85%, 0 100%);
 }
 
 .logo-box {
@@ -34,28 +34,72 @@ body {
   top: 40px;
   left: 40px;
 }
+
 .logo {
   height: 75px;
 }
+
 .header-text {
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .headin-title {
   color: #fff;
   text-transform: uppercase;
+  backface-visibility: hidden;
 }
+
 .heading-title-main {
   display: block;
   font-size: 60px;
   font-weight: 400;
   letter-spacing: 20px;
+  animation-name: moveInLeft;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
 }
+
 .heading-title-sub {
   display: block;
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 14px;
+  animation: moveInRight 1.5s ease-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
