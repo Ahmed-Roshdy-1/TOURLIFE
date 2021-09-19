@@ -44,12 +44,14 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.headin-title {
+.heading-title {
   color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
+  margin-bottom: 120px;
 }
 
 .heading-title-main {
@@ -102,4 +104,28 @@ body {
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+.btn:link,
+.btn:active {
+  text-transform: capitalize;
+  text-decoration: none;
+  align-self: center;
+  display: inline-block;
+  padding: 15px 60px;
+  border-radius: 100px;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.btn-white {
+  color: rgb(87, 80, 80);
+  background: #fff;
 }
