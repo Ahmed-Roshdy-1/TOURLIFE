@@ -40,7 +40,7 @@ body {
 }
 .logo-box p {
   color: #fff;
-  font-family: Charm;
+  font-family: Charm, sans-serif;
   font-size: 16px;
   letter-spacing: 3px;
 }
