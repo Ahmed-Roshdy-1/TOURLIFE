@@ -38,6 +38,12 @@ body {
 .logo {
   height: 75px;
 }
+.logo-box p {
+  color: #fff;
+  font-family: Charm;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
 
 .header-text {
   position: absolute;
@@ -106,14 +112,27 @@ body {
   }
 }
 
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .btn:link,
 .btn:active {
   text-transform: capitalize;
   text-decoration: none;
-  align-self: center;
   display: inline-block;
   padding: 15px 60px;
+  position: relative;
   border-radius: 100px;
+  transition: all 0.2s;
 }
 
 .btn:hover {
@@ -128,4 +147,32 @@ body {
 .btn-white {
   color: rgb(87, 80, 80);
   background: #fff;
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn-white::after {
+  background: #fff;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.2) scaleY(1.4);
+  opacity: 0;
+  transition: 1.5s;
+}
+
+.btn-animation {
+  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
 }
