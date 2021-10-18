@@ -1,7 +1,7 @@
 body {
   font-family: Merienda, sans-serif;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: $defualt-font-size;
   line-height: 1.7;
   color: $color-grey-dark;
   padding: 2.5rem;
@@ -20,5 +20,17 @@ body {
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 1.5rem rgba($color-black, 0.4);
+  }
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.paragraph {
+  font-size: $defualt-font-size;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
   }
 }
