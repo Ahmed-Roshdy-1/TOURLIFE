@@ -3,3 +3,12 @@
   padding: 25rem 0;
   margin-top: -15vh;
 }
+
+.features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba($color-primary-dark, 0.6), rgba($color-primary-light, 0.6)),
+    url(../Images/featuer.jpg);
+  background-size: cover;
+  clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
+  margin-top: -20vh;
+}
