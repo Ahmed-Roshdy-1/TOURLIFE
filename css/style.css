@@ -80,6 +80,9 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
+.u-margin-top-big {
+  margin-top: 8rem; }
+
 .btn:link, .btn:active {
   text-transform: capitalize;
   text-decoration: none;
@@ -101,9 +104,17 @@ body {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4); }
 
+.btn-p {
+  color: #fff;
+  background: #ff758f; }
+  .btn-p::after {
+    background: #ff758f; }
+
 .btn-white {
   color: #000;
   background: #fff; }
+  .btn-white::after {
+    background: #fff; }
 
 .btn::after {
   content: "";
@@ -116,9 +127,6 @@ body {
   left: 0;
   z-index: -1;
   transition: all 0.4s; }
-
-.btn-white::after {
-  background: #fff; }
 
 .btn-animation {
   animation: moveInBottom 0.5s ease-out 0.75s;
@@ -195,11 +203,12 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 50rem; }
+  height: 52rem;
+  margin-bottom: 5rem; }
   .card__side {
     color: #000;
     font-size: 2rem;
-    height: 50rem;
+    height: 52rem;
     transition: all 1s ease;
     position: absolute;
     top: 0;
@@ -216,6 +225,10 @@ body {
       transform: rotateY(180deg); }
       .card__side--back-1 {
         background-image: linear-gradient(to right bottom, #9d4edd, #240046); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #ff758f, #c9184a); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right bottom, #42a5f5, #0d47a1); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -228,12 +241,16 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
     .card__picture--1 {
       background-image: linear-gradient(to right bottom, #9d4edd, #240046), url(../../Images/card1.jpg); }
+    .card__picture--2 {
+      background-image: linear-gradient(to right bottom, #ff758f, #c9184a), url(../../Images/card2.jpg); }
+    .card__picture--3 {
+      background-image: linear-gradient(to right bottom, #0d47a1, #0d47a1), url(../../Images/card3.jpg); }
   .card__heading {
     font-size: 2.8rem;
     text-transform: capitalize;
     position: absolute;
     top: 11rem;
-    right: 0rem;
+    right: 2rem;
     width: 65%; }
   .card__heading-span {
     padding: 0.8rem 1.5rem;
@@ -241,6 +258,10 @@ body {
     box-decoration-break: clone; }
     .card__heading-span--1 {
       background-image: linear-gradient(to right, rgba(157, 78, 221, 0.85), rgba(36, 0, 70, 0.85)); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right, rgba(255, 117, 143, 0.85), rgba(201, 24, 74, 0.85)); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to right, rgba(66, 165, 245, 0.85), rgba(13, 71, 161, 0.85)); }
   .card__details {
     padding: 3rem; }
     .card__details ul {
@@ -252,6 +273,21 @@ body {
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #dee2e6; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; }
+  .card__price-box {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 8rem; }
+  .card__price-only {
+    font-size: 2.4rem; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100; }
 
 /* header */
 .header {
@@ -340,5 +376,5 @@ body {
 
 .tours {
   background-color: #dee2e6;
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0 15rem 0;
   margin-top: -20vh; }

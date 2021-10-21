@@ -25,11 +25,28 @@
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.4);
   }
+  &-p{
+    color: $text-color;
+    background: $color-primary-light;
 
-  &-white {
+    &::after {
+      background: $color-primary-light;
+    }
+
+    
+  }
+
+  &-white{
     color: $color-grey-dark;
     background: $text-color;
+
+    &::after {
+      background: $text-color;
+    }
   }
+
+
+ 
 
   &::after {
     content: "";
@@ -42,10 +59,6 @@
     left: 0;
     z-index: -1;
     transition: all 0.4s;
-  }
-
-  &-white::after {
-    background: $text-color;
   }
 
   &-animation {

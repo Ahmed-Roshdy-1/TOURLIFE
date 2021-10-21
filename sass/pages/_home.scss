@@ -9,13 +9,13 @@
   background-image: linear-gradient(to right bottom, rgba($color-primary-dark, 0.6), rgba($color-primary-light, 0.6)),
     url(../Images/featuer.jpg);
   background-size: cover;
-  -webkit-clip-path:polygon(100% 0, 100% 80%, 0 100%, 0 20%);
+  -webkit-clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
   clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
   margin-top: -20vh;
 }
 
 .tours {
   background-color: $color-grey-light-1;
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0 15rem 0;
   margin-top: -20vh;
 }
