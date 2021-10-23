@@ -80,6 +80,9 @@ body {
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
 
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
 .u-margin-top-big {
   margin-top: 8rem; }
 
@@ -437,3 +440,17 @@ body {
 .stories {
   position: relative;
   padding: 15rem 0; }
+
+.booking {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right bottom, #ff758f, #c9184a); }
+
+.book {
+  background-image: linear-gradient(105deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 50%, transparent 50%), url(../../Images/booking.jpg);
+  background-size: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.4);
+  height: 50rem; }
+  .book__form {
+    width: 50%;
+    padding: 6rem; }
