@@ -1,4 +1,5 @@
 .btn {
+  &,
   &:link,
   &:active {
     text-transform: capitalize;
@@ -8,6 +9,9 @@
     position: relative;
     border-radius: 10rem;
     transition: all 0.2s;
+
+    border: none;
+    cursor: pointer;
   }
 
   &:hover {
@@ -25,18 +29,16 @@
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.4);
   }
-  &-p{
+  &-p {
     color: $text-color;
-    background: $color-primary-light;
+    background: $color-primary;
 
     &::after {
-      background: $color-primary-light;
+      background: $color-primary;
     }
-
-    
   }
 
-  &-white{
+  &-white {
     color: $color-grey-dark;
     background: $text-color;
 
@@ -44,9 +46,6 @@
       background: $text-color;
     }
   }
-
-
- 
 
   &::after {
     content: "";
