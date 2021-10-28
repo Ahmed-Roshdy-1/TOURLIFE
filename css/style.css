@@ -288,10 +288,6 @@ body {
         background-image: linear-gradient(to right bottom, #ff758f, #c9184a); }
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #42a5f5, #0d47a1); }
-  .card:hover .card__side--front {
-    transform: rotateY(-180deg); }
-  .card:hover .card__side--back {
-    transform: rotateY(0); }
   .card__picture {
     background-size: cover;
     height: 23rem;
@@ -347,6 +343,44 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
+  @media (max-width: 56.25em) {
+    .card {
+      height: auto;
+      border-radius: 0.5rem;
+      background-color: #fff;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+      .card__side {
+        height: auto;
+        position: relative;
+        box-shadow: none; }
+        .card__side--front {
+          background-color: #fff; }
+        .card__side--back {
+          transform: rotateY(0deg);
+          -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
+          .card__side--back-1 {
+            background-image: linear-gradient(to right bottom, #9d4edd, #240046); }
+          .card__side--back-2 {
+            background-image: linear-gradient(to right bottom, #ff758f, #c9184a); }
+          .card__side--back-3 {
+            background-image: linear-gradient(to right bottom, #42a5f5, #0d47a1); }
+      .card__details {
+        padding: 1rem 3rem; }
+      .card__cta {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+        width: 100%;
+        padding: 6rem 4rem 4rem 4rem; }
+      .card__price-box {
+        margin-bottom: 3rem; }
+      .card__price-only {
+        font-size: 2.4rem; }
+      .card__price-value {
+        font-size: 6rem;
+        font-weight: 100; } }
 
 .story {
   width: 75%;
