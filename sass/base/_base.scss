@@ -9,14 +9,9 @@
 html {
   font-size: 62.5%;
 
-
-  
-
-
   @include respond(tab-land) {
     font-size: 56.25%;
   }
-  
 
   @include respond(tab-port) {
     font-size: 50%;
@@ -25,12 +20,13 @@ html {
   @include respond(big-desktop) {
     font-size: 75%;
   }
-
-  
-  
 }
 
 body {
   box-sizing: border-box;
-}
+  padding: 2.5rem;
 
+  @include respond(tab-port) {
+    padding: 0;
+  }
+}

@@ -4,7 +4,6 @@ body {
   font-size: $defualt-font-size;
   line-height: 1.7;
   color: $color-grey-dark;
-  padding: 2.5rem;
   scroll-behavior: smooth;
 }
 
@@ -22,6 +21,19 @@ body {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 1.5rem rgba($color-black, 0.4);
   }
+
+
+  // medai Queries
+  @include respond(tab-port) {
+    font-size: 3rem;
+    
+  }
+  // medai Queries
+  @include respond(phone) {
+    font-size: 2rem;
+    
+  }
+
 }
 
 .heading-tertiary {
