@@ -299,11 +299,11 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #9d4edd, #240046), url(../../Images/card1.jpg); }
+      background-image: linear-gradient(to right bottom, #9d4edd, #240046), url(../Images/card1.jpg); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #ff758f, #c9184a), url(../../Images/card2.jpg); }
+      background-image: linear-gradient(to right bottom, #ff758f, #c9184a), url(../Images/card2.jpg); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #0d47a1, #0d47a1), url(../../Images/card3.jpg); }
+      background-image: linear-gradient(to right bottom, #0d47a1, #0d47a1), url(../Images/card3.jpg); }
   .card__heading {
     font-size: 2.8rem;
     text-transform: capitalize;
@@ -932,13 +932,13 @@ body {
       padding: 10rem 0; } }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 50%, transparent 50%), url(../../Images/booking.jpg);
+  background-image: linear-gradient(105deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 50%, transparent 50%), url(../Images/booking.jpg);
   background-size: cover;
   border-radius: 0.5rem;
   box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.4); }
   @media (max-width: 75em) {
     .book {
-      background-image: linear-gradient(105deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 70%, transparent 70%), url(../../Images/booking.jpg); } }
+      background-image: linear-gradient(105deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 70%, transparent 70%), url(../Images/booking.jpg); } }
   @media (max-width: 56.25em) {
     .book {
       background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(../Images/booking.jpg); } }

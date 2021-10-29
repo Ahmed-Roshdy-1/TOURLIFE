@@ -56,15 +56,15 @@
 
     &--1 {
       background-image: linear-gradient(to right bottom, $color-secondery-light, $color-secondery-dark),
-        url(../../Images/card1.jpg);
+        url(../Images/card1.jpg);
     }
     &--2 {
       background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
-        url(../../Images/card2.jpg);
+        url(../Images/card2.jpg);
     }
     &--3 {
       background-image: linear-gradient(to right bottom, $color-tertiary-dark, $color-tertiary-dark),
-        url(../../Images/card3.jpg);
+        url(../Images/card3.jpg);
     }
   }
 
