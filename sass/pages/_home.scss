@@ -73,7 +73,7 @@
 
   @include respond(tab-port){
     background-image: linear-gradient(to right, rgba($color-black, 0.5) 0%, rgba($color-black, 0.5) 100%),
-    url(../../Images/booking.jpg);  
+    url(../Images/booking.jpg);  
   }
 
   &__form {
