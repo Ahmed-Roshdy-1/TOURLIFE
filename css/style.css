@@ -288,6 +288,10 @@ body {
         background-image: linear-gradient(to right bottom, #ff758f, #c9184a); }
       .card__side--back-3 {
         background-image: linear-gradient(to right bottom, #42a5f5, #0d47a1); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
   .card__picture {
     background-size: cover;
     height: 23rem;
@@ -365,6 +369,8 @@ body {
             background-image: linear-gradient(to right bottom, #ff758f, #c9184a); }
           .card__side--back-3 {
             background-image: linear-gradient(to right bottom, #42a5f5, #0d47a1); }
+      .card:hover .card__side--front {
+        transform: rotateY(0deg); }
       .card__details {
         padding: 1rem 3rem; }
       .card__cta {
@@ -801,9 +807,18 @@ body {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.5);
     transition: all 0.5s ease-in; }
+    @media (max-width: 75em) {
+      .popup__content {
+        width: 100%; } }
+    @media (max-width: 56.25em) {
+      .popup__content {
+        width: 100%; } }
   .popup__left {
     width: 33.33333%;
     display: table-cell; }
+    @media (max-width: 56.25em) {
+      .popup__left {
+        display: none; } }
   .popup__img {
     display: block;
     width: 100%; }
@@ -812,6 +827,10 @@ body {
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
+    @media (max-width: 56.25em) {
+      .popup__right {
+        width: 100%;
+        display: inline-block; } }
   .popup__text {
     font-size: 1.5rem;
     margin-bottom: 4rem;
@@ -823,6 +842,9 @@ body {
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
+    @media (max-width: 37.5em) {
+      .popup__text {
+        font-size: 1.3rem; } }
   .popup:target {
     opacity: 1;
     visibility: initial; }
@@ -922,7 +944,7 @@ body {
     padding: 6rem; }
     @media (max-width: 75em) {
       .book__form {
-        width: 65%; } }
+        width: 75%; } }
     @media (max-width: 56.25em) {
       .book__form {
         width: 100%;

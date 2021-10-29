@@ -38,6 +38,15 @@
     }
   }
 
+  &:hover &__side--front{
+    transform: rotateY(-180deg);
+  }
+
+  &:hover &__side--back{
+    transform: rotateY(0);
+  }
+
+
   &__picture {
     background-size: cover;
     height: 23rem;
@@ -126,6 +135,11 @@
     font-weight: 100;
   }
 
+
+
+
+
+
   @include respond(tab-port) {
     height: auto;
     border-radius: 0.5rem;
@@ -158,6 +172,12 @@
         }
       }
     }
+
+    &:hover &__side--front{
+      transform: rotateY(0deg);
+    }
+  
+    
 
     &__details {
       padding: 1rem 3rem;
