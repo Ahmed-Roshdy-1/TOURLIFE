@@ -2,12 +2,17 @@
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba($color-primary-dark, 0.6), rgba($color-primary-light, 0.6)),
-    url(../Images/hero.jpg);
+    url(../Images/hero-small.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 50% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 50% 85%, 0 100%);
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: linear-gradient(to right bottom, rgba($color-primary-dark, 0.6), rgba($color-primary-light, 0.6)),
+      url(../Images/hero.jpg);
+  }
 
   @include respond(phone) {
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 50% 100%, 0 100%);
@@ -44,7 +49,6 @@
       backface-visibility: hidden;
       margin-bottom: 12rem;
 
-
       // media Queries
       @include respond(phone) {
         margin-bottom: 5rem;
@@ -63,7 +67,6 @@
           font-size: 5rem;
           letter-spacing: 0.5rem;
         }
-
       }
 
       &-sub {

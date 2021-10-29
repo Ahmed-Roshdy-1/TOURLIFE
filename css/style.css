@@ -532,12 +532,15 @@ body {
 /* header */
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(201, 24, 74, 0.6), rgba(255, 117, 143, 0.6)), url(../Images/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(201, 24, 74, 0.6), rgba(255, 117, 143, 0.6)), url(../Images/hero-small.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 50% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 50% 85%, 0 100%); }
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    .header {
+      background-image: linear-gradient(to right bottom, rgba(201, 24, 74, 0.6), rgba(255, 117, 143, 0.6)), url(../Images/hero.jpg); } }
   @media (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 50% 100%, 0 100%);
