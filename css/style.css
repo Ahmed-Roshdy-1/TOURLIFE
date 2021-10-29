@@ -889,8 +889,7 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #ff4d6d;
   border-radius: 0.5rem;
-  margin: 0.2rem;
-  background: #fff; }
+  margin: 0.2rem; }
   @media (max-width: 37.5em) {
     ::-webkit-scrollbar-thumb {
       width: 0;
@@ -898,8 +897,7 @@ body {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #c9184a;
-  background: #fff; }
+  background: #c9184a; }
   @media (max-width: 37.5em) {
     ::-webkit-scrollbar-thumb:hover {
       width: 0;
