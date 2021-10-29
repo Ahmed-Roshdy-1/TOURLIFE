@@ -872,20 +872,38 @@ body {
 /* width */
 ::-webkit-scrollbar {
   width: 0.8rem; }
+  @media (max-width: 37.5em) {
+    ::-webkit-scrollbar {
+      width: 0;
+      display: none; } }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: #fff; }
+  @media (max-width: 37.5em) {
+    ::-webkit-scrollbar-track {
+      width: 0;
+      display: none; } }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #ff4d6d;
   border-radius: 0.5rem;
-  margin: 0.2rem; }
+  margin: 0.2rem;
+  background: #fff; }
+  @media (max-width: 37.5em) {
+    ::-webkit-scrollbar-thumb {
+      width: 0;
+      display: none; } }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #c9184a; }
+  background: #c9184a;
+  background: #fff; }
+  @media (max-width: 37.5em) {
+    ::-webkit-scrollbar-thumb:hover {
+      width: 0;
+      display: none; } }
 
 /* End of Scrolling */
 .about {
